@@ -1,0 +1,15 @@
+image=imread('salt_pepper.png');
+image=rgb2gray(image);
+imshow(image);
+title 'original'
+h = ones(5,5)/25;
+I2 = imfilter(image,h);
+figure
+imshow(I2)
+title 'averaging filter'
+
+image1=medfilt2(image,[5,5]);
+figure
+imshow(image1);
+title 'median filter'
+

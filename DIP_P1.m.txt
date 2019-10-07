@@ -1,0 +1,7 @@
+image=imread('lena.png');
+disp('the size of image is:');
+disp(size(image));
+imshow(image);
+y=impixel(image,5,2);
+disp('the required pixel is');
+disp(y);

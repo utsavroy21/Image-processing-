@@ -1,0 +1,50 @@
+%7a
+image=imread('lena2.jpg');
+imshow(image);
+title('original');
+figure
+im=imresize(image,2,'nearest');
+imshow(im);
+title('2x near');
+
+im=imresize(image,3,'nearest');
+figure
+imshow(im);
+title('3x near');
+%bicubic, the resize function uses bicubic by default
+imshow(image);
+title('original');
+figure
+im=imresize(image,2);
+imshow(im);
+title('2x bicubic');
+figure
+im=imresize(image,3);
+imshow(im);
+title('3x bicubic');
+%bilinear
+imshow(image);
+title('original');
+figure
+im=imresize(image,2,'bilinear');
+imshow(im);
+title('2x bilinear');
+figure
+im=imresize(image,3,'bilinear');
+imshow(im);
+title('3x bilinear');
+
+
+%7b
+7b)
+image=imread('goldhill.jpeg');
+imshow(image);
+title('original');
+figure
+im=imresize(image,1/2,'nearest');
+imshow(im);
+title('2x far');
+im=imresize(image,1/3,'nearest');
+figure
+imshow(im);
+title('3x far');

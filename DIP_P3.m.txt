@@ -1,0 +1,23 @@
+image=imread('lena2.jpg');
+imshow(image);
+title 'original image'
+[r,c]=size(image);
+fina=zeros(r,c);
+for i=1:r;
+    for j=1:c;
+        if image(i,j)<50
+            fina(i,j)=0;
+        else if image(i,j)>=50 && image(i,j)<150
+                fina(i,j)=image(i,j);
+            
+        else if image(i,j)>150
+                fina(i,j)=255;
+            end
+               
+        end
+        end
+    end
+end
+figure
+imshow(fina);
+title 'operated image'

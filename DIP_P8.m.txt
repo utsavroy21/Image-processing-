@@ -1,0 +1,37 @@
+ %a) Contrast stretching using a piece wise linear function 
+
+i=imread('abc.jpg');
+figure(1);
+imshow(i);
+title('original image');
+a=min(x(:));
+b=max(x(:));
+i=(i-a))
+
+%b) Histogram stretching 
+Soln.
+i=imread('abc.jpg');
+figure(1);
+imshow(i);
+title('origin image');
+a=min(x(:));
+b=max(x(:));
+i=(i-a).*(255/(b-a));
+figure(2);
+imshow(i);
+
+%c) Histogram equalization
+Soln.
+i=imread('barbara.jpg');
+figure
+subplot(1,2,1);
+imshow(i);
+subplot(1,2,2);
+imhist(i,64);
+j=histeq(i);
+figure
+subplot(1,2,1)
+imshow(j);
+subplot(1,2,2);
+imhist(j,64);
+

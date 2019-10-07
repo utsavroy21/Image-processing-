@@ -1,0 +1,12 @@
+image=imread('lena.png');
+image=rgb2gray(image);
+imshow(image);
+title 'original'
+im16=image/16;
+im4=image/4;
+figure
+imshow(im16,[])
+title '16 quantization levels'
+figure
+imshow(im4,[])
+title '64 quantization levels'

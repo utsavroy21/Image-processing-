@@ -1,0 +1,35 @@
+%First order filter-
+a=imread(‘detail.png’);
+a=rgb2gray(a);
+e1=edge(a,’prewitt’);
+e2=edge(a,’sobel’);
+e3=edge(a,’roberts’);
+figure
+subplot(2,2,1);
+imshow(a);
+title ’original’
+
+subplot(2,2,2);
+imshow(e1);
+title ‘prewitt’
+
+subplot (2,2,3);
+imshow(e2);
+title ‘sobel’
+
+subplot (2,2,4);
+imshow(e3);
+title ‘roberts’
+
+%Second order filter-
+
+a=imread(barbara.png’);
+f=fspecial(‘laplacian’);
+af=filter2(f,a);
+figure
+subplot(1,2,1);
+imshow(a);
+title ‘original’
+subplot(1,2,2);
+imshow(af);
+title ‘second order filter’

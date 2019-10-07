@@ -1,0 +1,9 @@
+image=imread('lena.png');
+image=rgb2gray(image);
+imshow(image);
+title 'original'
+figure
+resize1=imresize(image,(1/4));
+imshow(resize1);
+title 'operated'
+

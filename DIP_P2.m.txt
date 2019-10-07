@@ -1,0 +1,7 @@
+x=imread('lena.png');
+imshow(x);
+title 'original image'
+flipped=flipdim(x,2);
+figure
+imshow(flipped);
+title 'mirror image'
