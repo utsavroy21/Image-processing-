@@ -4,7 +4,7 @@ Basic Image processing using MATLAB
 and second column. 
 2. Write the program that produces mirror image of the image and display both the original 
 and mirror images.
-3. Write a MATLAB code that will do the following
+3. Perform the following functions-
 a) Read any gray scale image.
 b) Display that image.
 c) Again display the image such that the pixels having intensity values below 50 will
